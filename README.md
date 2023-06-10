@@ -3,6 +3,22 @@ Hate_Speech_Classifier
 
 Hate speech classifier with machine learning methods
 
+Setup and installation
+----------------------
+- Install requirements.txt
+
+
+    pip install -r requirements.txt
+- download data by running src/data/make_dataset.py
+
+
+    python ./src/data/make_dataset.py
+
+
+####Notebook in ./notebooks/Hate_speech_classifier.ipynb
+
+
+
 Project Organization
 ------------
 
@@ -32,24 +48,23 @@ Project Organization
     │                         generated with `pip freeze > requirements.txt`
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    └── src                <- Source code for use in this project.
+       ├── __init__.py    <- Makes src a Python module
+       │
+       ├── data           <- Scripts to download or generate data
+       │   └── make_dataset.py
+       │
+       ├── features       <- Scripts to turn raw data into features for modeling
+       │   └── build_features.py
+       │
+       ├── models         <- Scripts to train models and then use trained models to make
+       │   │                 predictions
+       │   ├── predict_model.py
+       │   └── train_model.py
+       │
+       └── visualization  <- Scripts to create exploratory and results oriented visualizations
+           └── visualize.py
+    
 
 
 --------
